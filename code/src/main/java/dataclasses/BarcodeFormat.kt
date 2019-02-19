@@ -8,6 +8,6 @@ sealed class BarcodeFormat {
 
     object PDF417 : BarcodeFormat()
 
-    object QR : BarcodeFormat()
+    data class QR(val size: Int) : BarcodeFormat()
 
 }
