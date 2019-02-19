@@ -12,7 +12,11 @@ object HelloKotlin2 {
     fun main(args: Array<String>) {
         println("Enter your name")
         print("> ")
+
+        // read name form std in
         val name = readLine()
+
+
         greet(name)
     }
 

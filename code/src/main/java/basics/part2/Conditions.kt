@@ -1,5 +1,7 @@
 package basics.part2
 
+import basics.part2.Conditions.Generation.*
+
 /**
  * - when
  * - return
@@ -18,24 +20,23 @@ object Conditions {
         println("You are a $generation")
     }
 
-    fun determineGeneration(yearOfBirth: Int): Generation {
-
+    private fun determineGeneration(yearOfBirth: Int): Generation {
         if (yearOfBirth < 1883) {
             throw IllegalArgumentException("Day of year is too low")
         } else if (yearOfBirth <= 1900) {
-            return Conditions.Generation.LostGeneration
+            return LostGeneration
         } else if (yearOfBirth < 1924) {
-            return Conditions.Generation.GIGeneration
+            return GIGeneration
         } else if (yearOfBirth < 1942) {
-            return Conditions.Generation.SilentGeneration
+            return SilentGeneration
         } else if (yearOfBirth < 1964) {
-            return Conditions.Generation.BabyBoomer
+            return BabyBoomer
         } else if (yearOfBirth < 1980) {
-            return Conditions.Generation.GenerationX
+            return GenerationX
         } else if (yearOfBirth < 2000) {
-            return Conditions.Generation.Millennial
+            return Millennial
         } else {
-            return Conditions.Generation.GenerationZ
+            return GenerationZ
         }
     }
 
