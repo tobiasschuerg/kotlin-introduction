@@ -1,4 +1,4 @@
-package basics3;
+package basics.part3;
 
 /**
  * Java <-> Kotlin conversion

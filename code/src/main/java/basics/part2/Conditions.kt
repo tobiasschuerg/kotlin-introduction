@@ -1,4 +1,4 @@
-package basics2
+package basics.part2
 
 /**
  * - when
@@ -23,19 +23,19 @@ object Conditions {
         if (yearOfBirth < 1883) {
             throw IllegalArgumentException("Day of year is too low")
         } else if (yearOfBirth <= 1900) {
-            return Generation.LostGeneration
+            return Conditions.Generation.LostGeneration
         } else if (yearOfBirth < 1924) {
-            return Generation.GIGeneration
+            return Conditions.Generation.GIGeneration
         } else if (yearOfBirth < 1942) {
-            return Generation.SilentGeneration
+            return Conditions.Generation.SilentGeneration
         } else if (yearOfBirth < 1964) {
-            return Generation.BabyBoomer
+            return Conditions.Generation.BabyBoomer
         } else if (yearOfBirth < 1980) {
-            return Generation.GenerationX
+            return Conditions.Generation.GenerationX
         } else if (yearOfBirth < 2000) {
-            return Generation.Millennial
+            return Conditions.Generation.Millennial
         } else {
-            return Generation.GenerationZ
+            return Conditions.Generation.GenerationZ
         }
     }
 

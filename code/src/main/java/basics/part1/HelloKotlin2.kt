@@ -1,4 +1,4 @@
-package basics1
+package basics.part1
 
 /**
  * - defining variables
