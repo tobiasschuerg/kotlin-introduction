@@ -26,7 +26,7 @@ public class EventServiceImpl implements EventService {
         for (int i = 0; i < 100; i++) {
             EventType type = randomType();
             Employee employee = randomEmployee();
-            list.add(new Event(type, employee));
+            list.add(new Event(type, employee, date, time, price, trainingLocation));
         }
         return list;
     }
