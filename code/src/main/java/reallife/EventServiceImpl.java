@@ -10,7 +10,7 @@ public class EventServiceImpl implements EventService {
     private final Random random;
 
 
-    public EventServiceImpl(Random random) {
+    EventServiceImpl(Random random) {
         this.random = random;
         employees = new ArrayList<Employee>();
         employees.add(new Employee("Hans", 20, ""));
@@ -26,7 +26,8 @@ public class EventServiceImpl implements EventService {
         for (int i = 0; i < 100; i++) {
             EventType type = randomType();
             Employee employee = randomEmployee();
-            list.add(new Event(type, employee, date, time, price, trainingLocation));
+            Event event = new Event(type, employee, "date", "time", 199, "location");
+            list.add(event);
         }
         return list;
     }
